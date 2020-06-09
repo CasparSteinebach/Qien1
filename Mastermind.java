@@ -12,6 +12,9 @@ public class Main { // Hoofdklasse
     static String doorgeven = "abcd";
 
     public static void main(String[] args) {
+        System.out.println("** MASTERMIND - Caspar Steinebach **");
+        System.out.println("toets 'q' om het spel te verlaten");
+
         lijstLettersRandom();
         while (true) {
             lettersKloppen();
@@ -22,9 +25,14 @@ public class Main { // Hoofdklasse
     }
 
     static void lettersKloppen() {
-        System.out.println("Raad de code: 4 letters (a t/m f)");
+        System.out.println("-------------------------------------");
+        System.out.println("Voer je code in: 4 letters (a t/m f)");
         Scanner scanner = new Scanner(System.in);
         String invoer = scanner.nextLine();
+        if (invoer.equals("q")){
+            System.out.print("Bedankt en tot ziens!");
+            System.exit(0);
+        }
         letters = invoer.toCharArray();
     }
 

@@ -1,6 +1,10 @@
+package com.company;
+import org.w3c.dom.ls.LSOutput;
+// Mastermind versie 0.1
+
 import java.util.*;  // Import Library
 
-public class Mastermind { // Hoofdklasse
+public class Main { // Hoofdklasse
 
     static char[] lijstLetters = new char[6];
     static char[] letters = new char[6];
@@ -13,9 +17,13 @@ public class Mastermind { // Hoofdklasse
     }
 
     static void lettersKloppen(){
-        String invoer = "abcdfe";
+        System.out.println("Geef je invoer: 6 letters (a t/m f)");
+        Scanner scanner = new Scanner(System.in);
+        String invoer = scanner.nextLine();
+
+        //String invoer = "abcdfe";
         letters = invoer.toCharArray();
-        System.out.println(letters);
+        //System.out.println(letters);
         //System.out.println(lijstLetters);
 
     }

@@ -25,7 +25,7 @@ public class Main { // Hoofdklasse
 
     static void clearScreen() {
 
-        System. out. flush();
+        System.out.flush();
     }
 
     static void lijstLettersRandom() {                      // Deze methode laat de computer een code genereren.

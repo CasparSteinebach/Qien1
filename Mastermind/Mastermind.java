@@ -1,8 +1,6 @@
-package com.company;
-import org.w3c.dom.ls.LSOutput;
 // Mastermind versie 1.0
+// author: Caspar Steinebach
 
-import java.sql.SQLOutput;
 import java.util.*;  // Import Library
 
 public class Main { // Hoofdklasse
@@ -12,6 +10,8 @@ public class Main { // Hoofdklasse
     static String doorgeven = "abcd";
 
     public static void main(String[] args) {
+        clearScreen();
+
         System.out.println("** MASTERMIND - Caspar Steinebach **");
         System.out.println("toets 'q' om het spel te verlaten");
 
@@ -21,6 +21,11 @@ public class Main { // Hoofdklasse
             lettersKloppen();
             checkRun();
         }
+    }
+
+    static void clearScreen() {
+
+        System. out. flush();
     }
 
     static void lijstLettersRandom() {                      // Deze methode laat de computer een code genereren.

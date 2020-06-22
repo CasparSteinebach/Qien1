@@ -1,0 +1,26 @@
+table{
+    max-width: 80%;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cadetblue;
+    border-width: 1px;
+    border-color:#ffffff;
+    text-align: left;
+    padding: 3px;
+}
+
+th{
+    background-color: lightskyblue;
+    font-size: 18px;
+    padding: 3px;
+}
+td{
+    padding: 5px;
+}
+section{
+    text-align: left;
+    max-width: 80%;
+    align-items: center;
+    padding-left: 20%;
+
+}
